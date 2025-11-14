@@ -1,9 +1,9 @@
-/* BỔ SUNG: CSS Reset đơn giản để loại bỏ margin/padding mặc định */
+
 h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 0;
     padding: 0;
 }
-/* BỔ SUNG: Đảm bảo hình ảnh không bị thừa khoảng trắng dưới chân */
+
 img {
     display: block;
 }
@@ -221,7 +221,7 @@ header {
     border-bottom: 2px solid #ff5722;
     padding-bottom: 5px;
     display: inline-block; 
-    text-align: left; /* 👈 Thêm dòng này */
+    text-align: left; 
 }
 
 
@@ -242,10 +242,10 @@ header {
     overflow-x: auto; 
     overflow-y: hidden;
     gap: 30px;
-    padding: 10px 40px 20px 40px; /* có thêm padding cho dễ nhìn */
-    scroll-behavior: smooth; /* cuộn mượt */
+    padding: 10px 40px 20px 40px; 
+    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* ẩn thanh cuộn */
+    scrollbar-width: none; 
 }
 
 .danh-sach-review-ngang::-webkit-scrollbar {
@@ -253,7 +253,7 @@ header {
 }
 
 .review-item-ngang {
-    flex-shrink: 0; /* KHÔNG CHO THẺ BỊ CO LẠI */
+    flex-shrink: 0;
     width: 250px;
     background-color: #fff;
     border-radius: 8px;
@@ -813,14 +813,14 @@ text-align: left;
 
 .authors-section {
     padding: 40px 20px;
-    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
 /* Tiêu đề "Tác giả" */
 .authors-title {
     font-size: 2em;
-    color: #38761d; /* Màu xanh đậm giống ảnh mẫu */
+    color: #38761d; 
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -828,42 +828,41 @@ text-align: left;
 /* Container chứa danh sách tác giả (sử dụng Flexbox cho bố cục lưới) */
 .authors-list {
     display: flex;
-    flex-wrap: wrap; /* Cho phép xuống hàng */
-    gap: 20px; /* Khoảng cách giữa các item */
-    justify-content: center; /* Canh giữa nếu không đủ 4 item */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
 }
 
 /* Định dạng từng item Tác giả (là thẻ <a>) */
 .author-item {
-    text-decoration: none; /* Bỏ gạch chân */
+    text-decoration: none; 
     color: #333;
     text-align: center;
-    /* Tính toán chiều rộng để có 4 cột, trừ đi khoảng cách (gap) */
     width: calc(25% - 15px); 
-    min-width: 150px; /* Chiều rộng tối thiểu cho mỗi item */
+    min-width: 150px; 
     margin-bottom: 20px;
     transition: opacity 0.3s ease;
 }
 
 .author-item:hover {
-    opacity: 0.8; /* Hiệu ứng mờ khi di chuột */
+    opacity: 0.8; 
 }
 
 /* Container ảnh để đảm bảo ảnh tròn */
 .author-photo-wrapper {
-    width: 150px; /* Kích thước ảnh */
+    width: 150px; 
     height: 150px;
-    margin: 0 auto 10px; /* Canh giữa và tạo khoảng cách */
-    overflow: hidden; /* Cần thiết để tạo hình tròn */
-    border-radius: 50%; /* TẠO HÌNH TRÒN */
-    border: 3px solid transparent; /* Viền để làm nổi bật */
+    margin: 0 auto 10px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    border: 3px solid transparent; 
 }
 
 /* Định dạng ảnh bên trong */
 .author-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Đảm bảo ảnh phủ kín khung mà không bị méo */
+    object-fit: cover;
 }
 
 /* Tên tác giả */
@@ -876,7 +875,7 @@ text-align: left;
 /* Responsive: 2 cột trên thiết bị di động */
 @media (max-width: 768px) {
     .author-item {
-        width: calc(50% - 10px); /* 2 cột trên màn hình nhỏ */
+        width: calc(50% - 10px); 
     }
 }
 /* Responsive: 1 cột trên màn hình siêu nhỏ */
@@ -886,4 +885,5 @@ text-align: left;
     }
 
 }
+
 
