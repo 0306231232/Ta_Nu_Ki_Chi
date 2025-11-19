@@ -10,13 +10,13 @@ img {
 .review-header {
     grid-column: 1 / span 2; 
     text-align: center;
-    margin-bottom: 40px; /* <--- Không có margin-top */
+    margin-bottom: 40px; 
 }
 
 .review-header h1 {
     font-size: 2.8em;
     /* ... */
-    margin-bottom: 10px; /* <--- Không có margin-top */
+    margin-bottom: 10px; /
 }
 
 
@@ -825,7 +825,7 @@ text-align: left;
     font-weight: bold;
 }
 
-/* Container chứa danh sách tác giả (sử dụng Flexbox cho bố cục lưới) */
+/* Container chứa danh sách tác giả  */
 .authors-list {
     display: flex;
     flex-wrap: wrap; 
@@ -833,7 +833,7 @@ text-align: left;
     justify-content: center; 
 }
 
-/* Định dạng từng item Tác giả (là thẻ <a>) */
+/* Định dạng từng item Tác giả */
 .author-item {
     text-decoration: none; 
     color: #333;
@@ -889,9 +889,9 @@ text-align: left;
 
         /* --- STYLE MỚI CHO KẾT QUẢ TÌM KIẾM --- */
         #search-results {
-            display: none; /* Mặc định ẩn */
+            display: none; 
             position: absolute;
-            top: 110%; /* Nằm ngay dưới ô tìm kiếm */
+            top: 110%;
             left: 0;
             width: 100%;
             background-color: #fff;
@@ -916,13 +916,12 @@ text-align: left;
             background-color: #f8f8f8;
         }
         .result-item strong {
-            color: #ff5e00; /* Tô đậm từ khóa khớp */
+            color: #ff5e00;
         }
         .result-item .context {
             font-size: 0.8em;
             color: #777;
             margin-top: 2px;
-            /* Cắt ngắn 2 dòng */
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;  
@@ -935,6 +934,7 @@ text-align: left;
             text-align: center;
         }
     
+
 
 
 
