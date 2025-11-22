@@ -60,14 +60,27 @@
             padding: 10px 15px;
             display: block;
         }
+        /* CSS MỚI: Định kiểu cho Font Awesome icons */
+        .nut-tim-kiem i {
+            font-size: 20px; 
+            color: #333;
+        }
+        .anh-dai-dien { 
+            font-size: 30px; 
+            width: 30px;
+            height: 30px;
+            display: block; 
+            line-height: 1; 
+            color: #333; 
+        }
         /* Giữ chỗ cho ảnh bìa để chống CLS nhỏ (Fix CLS 0.004) */
         .review-item {
             display: flex;
         }
         .review-anh-bia {
             display: block;
-            width: 200px; /* Đã có trong HTML, nhưng CSS này đảm bảo kiểu dáng */
-            height: 300px; /* Đã có trong HTML, nhưng CSS này đảm bảo kiểu dáng */
+            width: 200px; 
+            height: 300px; 
             object-fit: cover;
         }
     </style>
@@ -110,11 +123,11 @@
                 <div class="khung-tim-kiem">
                     <input type="text" placeholder="Tìm kiếm sách..." class="o-tim-kiem" aria-label="Tìm kiếm sách" id="search-input">
                     <button class="nut-tim-kiem" aria-label="Tìm kiếm">
-                        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Icon tìm kiếm" width="20" height="20">
+                        <i class="fas fa-search" aria-hidden="true"></i>
                     </button>
                     <div id="search-results"></div>
                 </div> 
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar người dùng" class="anh-dai-dien" width="30" height="30">
+                <i class="fas fa-user-circle anh-dai-dien" aria-hidden="true"></i>
             </div>
             
         </div>
